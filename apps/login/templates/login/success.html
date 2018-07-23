@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Reg | Success!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+<body>
+	<div class="d-block container-fluid">
+		<h1>Success! Welcome, {{ request.session.user_first_name }}!</h1>
+		<p>Succesfully registered (or logged in)!</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Reg | Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container-fluid">
+		<h1>Registration</h1>
+		<form class="d-block" action="/register" method="post">
+			{% csrf_token %}
+			First Name:
+			<input type="text" name="first_name" class="d-block">
+			Last Name:
+			<input type="text" name="last_name" class="d-block">
+			Email:
+			<input type="text" name="email" class="d-block">
+			Password:
+			<input type="password" name="password" class="d-block">
+			Password confirmation:
+			<input type="password" name="password_confirm" class="d-block">
+			<button class="d-block">Register</button>
+		</form>
+	</div>
+	<div class="container-fluid">
+		<h1>Login</h1>
+		<form class="d-block" action="/login" method="post">
+			{% csrf_token %}
+			Email:
+			<input type="text" name="email" class="d-block">
+			Password:
+			<input type="password" name="password" class="d-block">
+			<button class="d-block">Login</button>
+		</form>
+	</div>
+</body>
+</html>
